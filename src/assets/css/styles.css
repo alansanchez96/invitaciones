@@ -259,26 +259,42 @@ img {
 
 .temporizador-content .section-title {
   width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.timer-bg {
+  background-color: var(--black);
+  color: var(--color-secondary);
 }
 
 .timer {
   display: flex;
   flex-direction: row;
   margin: 4rem auto;
-  width: 100%;
+  width: 85%;
   align-items: center;
   justify-content: center;
   gap: 20px;
-  background-color: var(--black);
-  color: var(--color-secondary);
-  padding: 4rem;
+  padding: 4rem 0;
 }
 
 .timer-text {
-  font-size: 1rem;
+  font-size: .8rem;
 }
 
 .timer-text span {
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: 300;
+}
+
+@media (min-width: 420px) {
+  .timer-text span {
+    font-size: 4rem;
+    font-weight: 300;
+  }
+
+  .timer-text {
+    font-size: 1rem;
+  }
 }

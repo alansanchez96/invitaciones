@@ -14,14 +14,16 @@
             <div class="temporizador">
                 <div class="temporizador-content">
                     <h2 class="section-title">¡Qué ansias de que llegue el día! Solo falta</h2>
-                    <div id="timer" class="timer">
-                        <div class="timer-text"><span>{{ countdown.days }}</span> Días</div>
-                        <div><span>:</span></div>
-                        <div class="timer-text"><span>{{ countdown.hours }}</span> Horas</div>
-                        <div><span>:</span></div>
-                        <div class="timer-text"><span>{{ countdown.minutes }}</span> Minutos</div>
-                        <div><span>:</span></div>
-                        <div class="timer-text"><span>{{ countdown.seconds }}</span> Segundos</div>
+                    <div class="timer-bg">
+                        <div id="timer" class="timer">
+                            <div class="timer-text"><span>{{ countdown.days }}</span> Días</div>
+                            <div><span>:</span></div>
+                            <div class="timer-text"><span>{{ countdown.hours }}</span> Horas</div>
+                            <div><span>:</span></div>
+                            <div class="timer-text"><span>{{ countdown.minutes }}</span> Minutos</div>
+                            <div><span>:</span></div>
+                            <div class="timer-text"><span>{{ countdown.seconds }}</span> Segundos</div>
+                        </div>
                     </div>
                 </div>
             </div>
