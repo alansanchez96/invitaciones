@@ -8,22 +8,6 @@
 <script>
 
 export default {
-    name: 'Nosotros',
-    data() {
-        return {
-            'url': 'https://dev-alansan-netlify-app.preview-domain.com/',
-            'stacks': [],
-            'showStacks': true,
-            'serverError': false,
-        }
-    },
-    async mounted() {
-        await this.axios.get('/api/stacks-tecnologicos')
-            .then(response => this.stacks = response.data.data)
-            .catch(() => {
-                this.serverError = true;
-                this.showStacks = false;
-            })
-    }
+    name: 'Nosotros'
 }
 </script>
