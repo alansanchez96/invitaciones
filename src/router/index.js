@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import PortfolioVue from './routes/Portfolio.vue';
+import PortfolioVue from './routes/Main.vue';
 import LoginVue from './routes/Login.vue';
 import Dashboard from './routes/Dashboard.vue'
 

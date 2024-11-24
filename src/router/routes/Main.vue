@@ -1,20 +1,20 @@
 <template>
   <div id="page-top">
-    <Navbar />
+    <!-- <Navbar /> -->
     <Header />
-    <About />
-    <Conocimientos />
-    <Projects />
+    <Nosotros />
+    <Information />
+   <!-- <Projects />
     <Profile />
     <Contact />
-    <Footer />
+    <Footer />  -->
   </div>
 </template>
 
 <script>
-import About from '@/components/About.vue';
+import Information from '@/components/Information.vue';
 import Header from '@/components/Header.vue';
-import Conocimientos from '@/components/Conocimientos.vue';
+import Nosotros from '@/components/Nosotros.vue';
 import Navbar from '@/components/Navbar.vue';
 import Projects from '@/components/Projects.vue';
 import Profile from '@/components/Profile.vue';
@@ -24,9 +24,9 @@ import Footer from '@/components/Footer.vue';
 export default {
   name: 'Portfolio',
   components: {
-    About,
+    Information,
     Header,
-    Conocimientos,
+    Nosotros,
     Navbar,
     Projects,
     Profile,

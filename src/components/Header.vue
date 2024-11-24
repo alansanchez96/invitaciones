@@ -1,17 +1,13 @@
 <template>
-    <header class="masthead">
-        <div class="container px-4 px-lg-5 h-100">
-            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
-                <div class="col-lg-8 align-self-end">
-                    <h1 class="text-white font-weight-bold">Sanchez Alan<br>Backend Developer</h1>
-                    <hr class="divider" />
-                </div>
-                <div class="col-lg-8 align-self-baseline">
-                    <p class="text-white-75 mb-5">Sientente cómodo en mi website. Aqui podrás conocerme un poco más, ver mis
-                        proyectos y estar en contacto directo conmigo!</p>
-                    <a class="btn btn-primary btn-xl" href="#about">Conocer más</a>
-                </div>
-            </div>
+    <header class="header">
+        <div class="header-content">
+            <h1 class="names">Alan & Andy</h1>
+            <p class="subtitle">WEDDING DAY</p>
+            <a href="#nosotros" class="scroll-down">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="arrow-down">
+                <path d="M12 16l-6-6h12l-6 6z" fill="currentColor"/>
+            </svg>
+            </a>
         </div>
     </header>
 </template>
