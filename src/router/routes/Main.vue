@@ -4,9 +4,9 @@
     <Header />
     <Nosotros />
     <Information />
-   <!-- <Projects />
-    <Profile />
-    <Contact />
+    <Contador />
+    <Galeria />
+    <!--  <Contact />
     <Footer />  -->
   </div>
 </template>
@@ -16,8 +16,8 @@ import Information from '@/components/Information.vue';
 import Header from '@/components/Header.vue';
 import Nosotros from '@/components/Nosotros.vue';
 import Navbar from '@/components/Navbar.vue';
-import Projects from '@/components/Projects.vue';
-import Profile from '@/components/Profile.vue';
+import Contador from '@/components/Contador.vue';
+import Galeria from '@/components/Galeria.vue';
 import Contact from '@/components/Contact.vue';
 import Footer from '@/components/Footer.vue';
 
@@ -28,8 +28,8 @@ export default {
     Header,
     Nosotros,
     Navbar,
-    Projects,
-    Profile,
+    Contador,
+    Galeria,
     Contact,
     Footer
   }

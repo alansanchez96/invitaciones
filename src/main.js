@@ -5,6 +5,7 @@ import axios from 'axios';
 import VueAxios from 'vue-axios';
 import storage from './storage';
 
+import './assets/css/normalize.css';
 import './assets/css/styles.css';
 
 axios.defaults.baseURL = 'https://dev-alansan-netlify-app.preview-domain.com/';

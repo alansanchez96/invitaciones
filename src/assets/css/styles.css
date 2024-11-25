@@ -42,6 +42,7 @@ a {
 
 img {
   max-width: 100%;
+  height: 100%;
 }
 
 *::-webkit-scrollbar {
@@ -78,14 +79,14 @@ img {
 }
 
 .names {
-  margin-top: 14rem;
-  font-size: 3rem;
+  margin-top: 10rem;
+  font-size: 2.2rem;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 
 .subtitle {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   margin-top: 1rem;
   opacity: 0.8;
 }
@@ -101,6 +102,14 @@ img {
 .arrow-down {
   width: 2rem;
   height: 2rem;
+}
+
+.arrow-down {
+  margin: 4rem 0 0;
+  font-size: 3rem;
+  font-weight: 100;
+  color: var(--color-secondary);
+  cursor: pointer;
 }
 
 @keyframes bounce {
@@ -134,17 +143,10 @@ img {
   color: var(--color-secondary);
 }
 
-.arrow-down {
-  margin: 100px 0 0;
-  font-size: 5rem;
-  font-weight: 100;
-  color: var(--color-secondary);
-  cursor: pointer;
-}
 
 /* # 2da Section */
 .section-div {
-  margin: 8rem auto;
+  margin: 6.5rem auto;
   width: 100%;
 }
 
@@ -153,13 +155,13 @@ img {
 }
 
 .section-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   margin: 1rem auto;
 }
 
 .section-div .subtitle {
-  font-size: 1rem;
+  font-size: .8rem;
   opacity: 0.8;
   margin-bottom: 2rem;
 }
@@ -175,7 +177,7 @@ img {
 }
 
 .date-content .date-image {
-  width: 65%;
+  width: 100%;
 }
 
 .date-content .date-information {
@@ -187,17 +189,17 @@ img {
 }
 
 .date-content .date-information .section-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 0;
 }
 
 .date-content .date-information .date {
-  font-size: 1rem;
+  font-size: .7rem;
   color: var(--black);
 }
 
 .date-content .date-information .subtitle {
-  font-size: 1rem;
+  font-size: .8rem;
 }
 
 /* LOCATION */
@@ -216,40 +218,45 @@ img {
 }
 
 .location-content .location-information .section-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 0;
 }
 
 .location-content .location-information .location {
-  font-size: .9rem;
-  margin: .5rem auto 0;
+  font-size: .6rem;
+  margin: .3rem auto 0;
 }
 
 .location-content .location-image {
-  width: 65%;
+  width: 100%;
+  height: 100%;
 }
 
 .location-btn {
-  background-color: var(--black);
-  color: var(--color-secondary);
+  color: var(--black);
   border-radius: 10px;
-  padding: 1rem;
-  font-size: .8rem;
+  border: var(--black) solid 1px;
+  padding: .8rem;
+  font-size: .6rem;
   cursor: pointer;
   transition: all .3s ease;
-  margin-top: 3rem;
+  margin-top: 1rem;
   font-weight: 500;
 }
 
 .location-btn:hover {
-  background-color: #000000;
+  background-color: var(--black);
   color: var(--color-secondary);
-  border-radius: 10px;
-  padding: 1rem;
-  font-size: .8rem;
   cursor: pointer;
 }
 
+/* RING */
+.ring-content {
+  margin: 2.7rem auto;
+}
+.ring-content img {
+  width: 50px;
+}
 
 /* #TIMER */
 
@@ -264,14 +271,13 @@ img {
 }
 
 .timer-bg {
-  background-color: var(--black);
   color: var(--color-secondary);
 }
 
 .timer {
   display: flex;
   flex-direction: row;
-  margin: 4rem auto;
+  margin: 1rem auto;
   width: 85%;
   align-items: center;
   justify-content: center;
@@ -296,5 +302,85 @@ img {
 
   .timer-text {
     font-size: 1rem;
+  }
+}
+
+.timer-content {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url('../img/44.jpg');
+  width: 100%;
+  margin: 0;
+  position: relative;
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+}
+
+.gallery-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.gallery-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.gallery {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  cursor: grab;
+}
+
+.gallery:active {
+  cursor: grabbing;
+}
+
+.gallery-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.nav-btn.prev-btn {
+  left: 10px;
+}
+
+.nav-btn.next-btn {
+  right: 10px;
+}
+
+@media (min-width: 768px) {
+  .gallery-item {
+    min-width: 33.333%; /* Show 3 items in desktop */
   }
 }
